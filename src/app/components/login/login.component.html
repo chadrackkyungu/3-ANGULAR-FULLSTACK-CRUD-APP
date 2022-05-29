@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <!-- <mat-icon> user </mat-icon> -->
+  </button>
+  <span>CK</span>
+  <span class="example-spacer"></span>
+  <!-- <button  mat-raised-button color="warn">Login</button> -->
+</mat-toolbar>
+
+<div class="container">
+<mat-card class="example-card">
+  <mat-card-title>Login</mat-card-title>
+
+    <form  [formGroup]="productForm">
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input formControlName="email"  matInput placeholder="email">
+        </mat-form-field>
+          
+        <mat-form-field appearance="outline" >
+          <mat-label> Password </mat-label>
+          <input formControlName="password"  matInput placeholder="password">
+        </mat-form-field>
+    </form>
+
+   <div> <mat-label>Need an account ? <a href="/register"> Register </a></mat-label> </div> 
+   <br>
+   <div> <mat-label>Forgot password ? <a href="#" > Reset Password </a></mat-label> </div> 
+
+   <br>
+  <div mat-dialog-action [align]="'center'">
+      <button (click)="submit()" style="margin-left: 1em" mat-raised-button color="primary"> login </button>
+  </div>
+
+</mat-card> 
+
+</div>

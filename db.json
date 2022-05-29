@@ -1,0 +1,50 @@
+{
+  "productList": [
+    {
+      "productName": "Mengo!!! updated",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 20,
+      "comment": "hey this is a nice fruits",
+      "date": "2022-05-25T22:00:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "Apple",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 5,
+      "comment": "this is so nice",
+      "date": "2022-05-07T22:00:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "Tomato",
+      "category": "Vegetables",
+      "freshness": "Second Hand",
+      "price": 5,
+      "comment": "this is nice",
+      "date": "2022-05-01T22:00:00.000Z",
+      "id": 5
+    },
+    {
+      "productName": "Gabedge",
+      "category": "Vegetables",
+      "freshness": "Brand New",
+      "price": 5,
+      "comment": "this is nice",
+      "date": "2022-05-04T22:00:00.000Z",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,26 @@
+<app-visitor-navbar> </app-visitor-navbar>
+
+<div class="espace"> </div>
+<br>
+<br>
+
+
+<mat-card class="example-card">
+  <div>
+     
+    
+    <img mat-card-image src="{{prod_id_Detail.img}}" alt="Photo" class="example-header-image">
+  
+      <mat-card-title> <h1 class="h1">  {{prod_id_Detail.productName}} </h1> </mat-card-title>
+      <mat-card-subtitle>{{prod_id_Detail.freshness}}</mat-card-subtitle>
+
+    <mat-card-content>
+      <b>Category {{prod_id_Detail.category}}</b>
+      <b class="price">Price {{prod_id_Detail.price}}</b>
+      <p class="description">{{prod_id_Detail.comment}}</p>
+    </mat-card-content>
+
+    <button mat-raised-button color="primary">Buy now</button>
+
+   </div>
+</mat-card>

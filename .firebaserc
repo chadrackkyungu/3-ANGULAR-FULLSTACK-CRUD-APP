@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-crud-app-9d356": {
+      "hosting": {
+        "Angular-crud-13": [
+          "angular-crud-app-9d356"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-crud-app-9d356"
+  }
+}

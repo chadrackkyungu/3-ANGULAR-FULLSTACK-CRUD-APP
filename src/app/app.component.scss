@@ -1,0 +1,24 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+
+  table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }

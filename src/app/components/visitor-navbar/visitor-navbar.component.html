@@ -1,0 +1,31 @@
+<mat-toolbar color="primary" class="navbar">
+    <div class="menu-list">
+          <ul class="nav-list">
+
+            <li class="inner-nav-list"> 
+                <div class="example-button-container">
+                    <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
+                      <mat-icon>filter_list</mat-icon>
+                    </button>
+                  </div>
+                
+                <a [routerLink]="['/dashboard']">  Dashboard </a> 
+            </li>
+
+            <li  class="inner-nav-list"> 
+                  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                    <mat-icon>home</mat-icon>
+                  </button>
+                <a [routerLink]="['/products']">  Home </a> 
+            </li>
+
+          </ul>
+  
+          <span class="example-spacer"></span>
+    </div>
+
+    <div class="avatar">
+        <img src="https://material.angular.io/assets/img/examples/shiba2.jpg"  alt="Avatar" class="avatar">
+    </div>
+
+</mat-toolbar>

@@ -1,0 +1,107 @@
+(1) DEPENDENCIES
+=============
+npm i -g json-server
+npm i -g json-server
+npm install bootstrap
+ng add @angular/material  
+npm i @nebular/theme
+ng add @ng-bootstrap/ng-bootstrap
+
+// =>  https://material.angular.io/guide/getting-started
+
+//ng nebular components
+https://akveo.github.io/nebular/docs/components/toastr/overview#nbtoastrservice
+
+--------------------------end---------------------------
+
+//=> json-server --watch db.json // this will create a file call [db.json] // go inside the folder and change the name of the json  to [productList]
+
+(2) USEAGE OF THE MATERIAL / THIS HELP ME BUILD THE FORM UI INPUT
+=============================================================
+
+[app.modules.ts]
+import {MatToolbarModule} from '@angular/material/toolbar'; //under material toolbar API
+import {MatIconModule} from '@angular/material/icon'; //under material icons API
+import {MatButtonModule} from '@angular/material/button'; //btn API
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input'; 
+import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker'; 
+import {MatNativeDateModule} from '@angular/material/core'; 
+import {MatRadioModule} from '@angular/material/radio'; 
+import {MatTableModule} from '@angular/material/table'; 
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort'; 
+
+
+[import them] 
+imports: [
+    MatToolbarModule, 
+    MatIconModule, 
+    MatButtonModule //btn
+    MatDialogModule //PopUp
+    MatFormFieldModule //input FormField
+    MatInputModule  //input FormField
+    MatSelectModule //selection
+    MatDatepickerModule //date picker
+    MatNativeDateModule //date picker
+    MatRadioModule //Radio Button
+    MatTableModule //Table
+    MatPaginatorModule //Paginator
+    MatSortModule //for sorting
+],
+------------------------------end----------------------------
+
+
+(3) USING ng Angular Form
+======================
+the form will be used inside the [pop-up-dialog.component.ts]
+import { ReactiveFormsModule } from '@angular/forms'; //from angular
+
+[import them] 
+imports: [
+    ReactiveFormsModule //for the from to work
+],
+
+(4) SERVICES
+=============
+Generate services  //=> ng g s services/product-api
+
+
+[app.modules.ts]
+import { HttpClientModule } from '@angular/common/http';
+imports: [
+    HttpClientModule // this work with serveice
+],
+
+(5) CONNECT MY APP WITH FIREBASE
+================================
+ Install angular firebase to my app 
+ //==> ng add @angular/fire
+
+
+ (6) DEPLOY TO FIREBASE
+ =====================
+ Uplaod to firebase
+ //==> ng build --prod
+ //==> firebase deploy --only hosting
+
+
+ TRACK PERFORMANCE 
+ ================
+ Link    https://github.com/angular/angularfire/blob/master/docs/performance/getting-started.md
+
+
+ (7) PROTECT ROUTES
+ ==================
+  [step 1] to protect your route you generate the auth-guard in your termina 
+   // => ng g guard  [services/auth]
+ [step 2] create a function inside the auth.service.ts that will return a boolean value if the token existe
+ [step 3] import your auth-guard.ts inside [app.moule.ts]
+ [step 4] do the set up inside [auth-guard.ts]
+ [step 5] protect your route inside [app.routing.modules.ts]
+
+
+
+
